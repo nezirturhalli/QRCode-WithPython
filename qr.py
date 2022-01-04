@@ -1,3 +1,6 @@
+# pip install qrcode pillow
+# pip install image
+
 import qrcode
 
 qr = qrcode.QRCode(
@@ -6,7 +9,7 @@ qr = qrcode.QRCode(
     box_size = 10,
     border = 4,
 )
-# karekod içinde saklamak istediğiniz verileriniz
+# karekod içinde saklamak istediğiniz verileri giriniz.
 data = "https://github.com/nezirturhalli"
 # Veriyi ekleme
 qr.add_data(data)
