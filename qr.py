@@ -10,14 +10,19 @@ qr = qrcode.QRCode(
     border = 4,
 )
 # karekod içinde saklamak istediğiniz verileri giriniz.
+
 data = "https://github.com/nezirturhalli"
 # Veriyi ekleme
 qr.add_data(data)
 qr.make(fit=True)
+
 # Görüntü dosyasının oluşturulması
+
 img = qr.make_image(fill_color=(8,153,206),back_color="white")
+
 # Oluşturulan görüntü dosyasının kayıt biçimleri. İstediğiniz formatı seçebilirsiniz.:
-# img.save("image.png")
+
+# img.save("image.jpg")
 # img.save("image.bmp")
 # img.save("image.jpeg")
 img.save("image.png")
