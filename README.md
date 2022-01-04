@@ -1,2 +1,2 @@
-# qrcode-with-python
- simple qr code example
+# QR Code with Python
+ Simple qr code example in python.
